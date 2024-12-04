@@ -1,11 +1,10 @@
-import './Layout.scss';
 import { Outlet } from 'react-router';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Layout() {
   return (
-    <div>
+    <div className="w-full ">
       <Header />
       <Outlet />
       <Footer />

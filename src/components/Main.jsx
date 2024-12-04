@@ -1,8 +1,6 @@
-import './Main.scss';
-
 export default function Main() {
   return (
-    <main>
+    <main className="w-full">
       <h1>Main</h1>
     </main>
   );
