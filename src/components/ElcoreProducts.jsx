@@ -3,7 +3,7 @@ import DropdownMenu from './DropdownMenu';
 
 export default function ElcoreProducts() {
   return (
-    <div className="flex gap-10 items-center">
+    <>
       <Link className="text-white font-bold text-lg leading-5" to="/">
         ElcoreStore
       </Link>
@@ -14,9 +14,12 @@ export default function ElcoreProducts() {
         ElcoreIDE
       </Link>
       <DropdownMenu />
+      <Link className="text-white font-bold text-lg leading-5 xl:hidden" to="/">
+        Обучение и ресурсы
+      </Link>
       <Link className="text-white font-bold text-lg leading-5" to="/">
         Новости и&nbsp;статьи
       </Link>
-    </div>
+    </>
   );
 }

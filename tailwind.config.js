@@ -17,7 +17,12 @@ export default {
       },
       backgroundImage: {
         'dropdown-icon': "url('/src/assets/Polygon 15.svg')",
-        sandwich: "url('/src/assets/Сэндвич.svg')"
+        sandwich: "url('/src/assets/Сэндвич.svg')",
+        closeButton: "url('/src/assets/mobile-close-button.svg')"
+      },
+      transitionProperty: {
+        transform: 'transform',
+        all: 'all'
       }
     }
   },
