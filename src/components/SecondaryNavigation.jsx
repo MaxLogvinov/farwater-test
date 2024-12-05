@@ -6,18 +6,18 @@ import Cart from '/src/assets/shopping-cart.svg';
 export default function SecondaryNavigation() {
   return (
     <section className="flex w-full  bg-gray px-[5.2rem] justify-between pt-3.5 pb-3">
-      <div className="flex gap-5">
+      <div className="flex gap-[1.4rem] items-center">
         <SocialMediaIcons />
       </div>
       <div className=" flex gap-14">
-        <div className="flex gap-6">
-          <Link className="text-whitetext font-bold text-base " to="/">
+        <div className="flex gap-[1.9rem]">
+          <Link className="text-whitetext font-bold text-base text-[0.9375rem]" to="/">
             Форум
           </Link>
-          <Link className="text-whitetext font-bold text-base" to="/">
+          <Link className="text-whitetext font-bold text-base text-[0.9375rem]" to="/">
             Поиск
           </Link>
-          <Link className="text-whitetext font-bold text-base" to="/">
+          <Link className="text-whitetext font-bold text-base text-[0.9375rem]" to="/">
             Контакты
           </Link>
         </div>
