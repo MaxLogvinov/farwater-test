@@ -1,5 +1,6 @@
 import CardList from './CardList';
 import Filters from './Filters';
+import Pagination from './Pagination';
 
 export default function NewsAndArticles() {
   return (
@@ -7,6 +8,7 @@ export default function NewsAndArticles() {
       <h1 className="font-bold py-14 max-sm:py-7 text-4xl">Новости и статьи</h1>
       <Filters />
       <CardList />
+      <Pagination />
     </section>
   );
 }
