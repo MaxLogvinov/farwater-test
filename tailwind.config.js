@@ -8,6 +8,7 @@ export default {
         black: '#101010',
         white: '#FFFFFF',
         whitetext: '#F3F3F3',
+        whitelink: '#D9D9D9',
         green: '#428D26',
         graytext: '#6C6C6C',
         graysubtext: '#ABABAB'

@@ -12,10 +12,16 @@ export default function SecondaryNavigation() {
           <SocialMediaIcons />
         </div>
         <div className=" flex gap-14 ">
-          <div className="flex gap-[1.7rem] max-lg:hidden">
+          <nav
+            aria-label="навигация на форум, контакты и поиск"
+            className="flex gap-[1.7rem] max-lg:hidden"
+          >
             <NavigationsButtons />
-          </div>
-          <div className="flex gap-[1.8rem] ">
+          </nav>
+          <nav
+            aria-label="навигация в избранное,корзину покупок и личный кабинет"
+            className="flex gap-[1.8rem] "
+          >
             <Link to="/">
               <img
                 aria-label="перейти в избранное"
@@ -44,7 +50,7 @@ export default function SecondaryNavigation() {
             >
               Личный кабинет
             </button>
-          </div>
+          </nav>
         </div>
       </div>
     </section>

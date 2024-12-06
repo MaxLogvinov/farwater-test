@@ -21,12 +21,15 @@ export default function MobileMenu({ isOpen, setIsOpenMenu }) {
           className="bg-center bg-black bg-closeButton  w-[32px] h-[32px] self-end mt-[27px] mr-[27px] ml-0 "
           onClick={() => setIsOpenMenu(false)}
         ></button>
-        <div className="flex flex-col items-center gap-3">
+        <nav aria-label="навигация по продуктам сайта" className="flex flex-col items-center gap-3">
           <ElcoreProducts />
-        </div>
-        <div className="flex  items-center gap-5 lg:hidden  pt-[30vh]">
+        </nav>
+        <nav
+          aria-label="навигация на форум, контакты и поиск"
+          className="flex  items-center gap-5 lg:hidden  pt-[30vh]"
+        >
           <NavigationsButtons />
-        </div>
+        </nav>
         <div className="flex gap-[1.4rem] items-center sm:hidden pt-5">
           <SocialMediaIcons />
         </div>
