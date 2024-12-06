@@ -10,7 +10,7 @@ export default function MainNavigation() {
     <>
       <section className="w-full bg-black flex justify-center">
         <div className="w-full max-w-[1440px] flex items-center justify-between px-[5.2rem] max-lg:px-12 max-sm:px-5 py-9 max-sm:py-5">
-          <Logo />
+          <Logo width={192} height={33} />
           <nav
             aria-label="навигация по продуктам сайта"
             className="flex gap-10 items-center max-xl:hidden"

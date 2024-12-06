@@ -3,50 +3,61 @@ import TelegramIcon from '/src/assets/Тлг.svg';
 import DzenIcon from '/src/assets/Дзен.svg';
 import YoutubeIcon from '/src/assets/Ютуб.svg';
 import VkIcon from '/src/assets/Вк.svg';
+import PropTypes from 'prop-types';
 
-export default function SocialMediaIcons() {
+export default function SocialMediaIcons({
+  widthTg,
+  heightTg,
+  widthDz,
+  heightDz,
+  widthYt,
+  heightYt,
+  widthVk,
+  heightVk
+}) {
   return (
     <>
       <Link to="/">
         <img
           src={TelegramIcon}
           alt="инонка-ссылка Телеграм"
-          className="w-[1.25rem] h-[1.0625rem]"
           loading="lazy"
-          width="20"
-          height="17"
+          width={widthTg}
+          height={heightTg}
         />
       </Link>
       <Link to="/">
         <img
           src={DzenIcon}
           alt="иконка-ссылка Дзен"
-          className="w-[1.0625rem] h-[1.0625rem]"
           loading="lazy"
-          width="17"
-          height="17"
+          width={widthDz}
+          height={heightDz}
         />
       </Link>
       <Link to="/">
         <img
           src={YoutubeIcon}
           alt="инонка-ссылка Ютуб"
-          className="w-[1.1875rem] h-[1rem]"
           loading="lazy"
-          width="19"
-          height="17"
+          width={widthYt}
+          height={heightYt}
         />
       </Link>
       <Link to="/">
-        <img
-          src={VkIcon}
-          alt="инонка-ссылка ВК"
-          className="w-[1.0625rem] h-[1.0625rem]"
-          loading="lazy"
-          width="17"
-          height="17"
-        />
+        <img src={VkIcon} alt="инонка-ссылка ВК" loading="lazy" width={widthVk} height={heightVk} />
       </Link>
     </>
   );
 }
+
+SocialMediaIcons.propTypes = {
+  widthTg: PropTypes.number,
+  heightTg: PropTypes.number,
+  widthDz: PropTypes.number,
+  heightDz: PropTypes.number,
+  widthYt: PropTypes.number,
+  heightYt: PropTypes.number,
+  widthVk: PropTypes.number,
+  heightVk: PropTypes.number
+};

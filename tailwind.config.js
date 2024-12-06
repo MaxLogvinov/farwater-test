@@ -21,7 +21,8 @@ export default {
         sandwich: "url('/src/assets/Сэндвич.svg')",
         closeButton: "url('/src/assets/mobile-close-button.svg')",
         toBegin: "url('/src/assets/Перескок в начало.svg')",
-        toEnd: "url('/src/assets/Перескок в конец.svg')"
+        toEnd: "url('/src/assets/Перескок в конец.svg')",
+        download: "url('/src/assets/Скачать.svg')"
       },
       transitionProperty: {
         transform: 'transform',

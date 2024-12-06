@@ -1,7 +1,8 @@
 import LogoIcon from '../assets/Лого.svg';
 import { Link } from 'react-router';
+import PropTypes from 'prop-types';
 
-export default function Logo() {
+export default function Logo({ width, height }) {
   return (
     <Link className="">
       <img
@@ -9,9 +10,14 @@ export default function Logo() {
         aria-label=""
         alt="логотип компании ElcorePLC"
         loading="lazy"
-        width="192"
-        height="33"
+        width={width}
+        height={height}
       />
     </Link>
   );
 }
+
+Logo.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number
+};

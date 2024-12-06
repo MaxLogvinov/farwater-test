@@ -9,7 +9,16 @@ export default function SecondaryNavigation() {
     <section className="flex w-full  bg-gray justify-center">
       <div className="flex w-full max-w-[1440px] px-[5.2rem] max-lg:px-12 max-sm:px-5 justify-between max-sm:justify-center pt-3.5 pb-3">
         <div className="flex gap-[1.4rem] items-center max-sm:hidden">
-          <SocialMediaIcons />
+          <SocialMediaIcons
+            widthTg={20}
+            heightTg={17}
+            widthDz={17}
+            heightDz={17}
+            widthYt={19}
+            heightYt={17}
+            widthVk={17}
+            heightVk={17}
+          />
         </div>
         <div className=" flex gap-14 ">
           <nav
