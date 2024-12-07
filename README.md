@@ -1,8 +1,58 @@
-# React + Vite
+# Проект: Семантическая адаптивная верстка
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Данный проект представляет собой статическую веб-страницу, созданную для демонстрации навыков в семантической и адаптивной верстке. Основной упор сделан на кроссбраузерность, соответствие современным стандартам HTML5, использование Tailwind CSS для стилизации и адаптацию интерфейса до минимальной ширины экрана 358px.
 
-Currently, two official plugins are available:
+## Технологии и инструменты
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: библиотека для создания пользовательских интерфейсов.
+- **Vite**: инструмент для сборки, обеспечивающий быструю разработку.
+- **Tailwind CSS**: утилитарный CSS-фреймворк для стилизации.
+- **HTML5 и семантическая верстка**: создание структурированного и доступного HTML.
+- **Кроссбраузерность**: проверена совместимость в современных браузерах.
+
+## Функциональность
+
+1. **Семантическая структура** по заданному запросу.
+2. **Отображение таблицы результатов**, Использование тегов <header>, <main>, <footer>, <nav>, <aside>, <section> и других для улучшения доступности и SEO.
+3. **Адаптивный дизайн** Оптимизирован для экранов от 358px и выше. Использованы гриды и флексы.
+4. **Кроссбраузерность** Совместимость проверена в Chrome, Firefox, Safari, Яндекс.Браузер.
+
+## Установка и запуск проекта
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/MaxLogvinov/farwater-test.git
+   cd farwater-test
+   ```
+2. Установите зависимости:
+   ```sh
+   npm install
+   # или
+   yarn install
+   ```
+
+### Запуск приложения
+
+Для запуска сервера разработки выполните:
+
+```sh
+npm run dev
+# или
+yarn dev
+```
+
+Приложение будет доступно по адресу http://localhost:5173.
+
+### Деплой на GitHub Pages
+
+**[Ссылка на сайт](https://maxlogvinov.github.io/farwater-test/)**
+
+#### Задача
+
+Проект является демонстрацией навыков для выполнения тестового задания:
+
+- Семантическая и адаптивная верстка.
+- Использование Tailwind CSS для стилизации.
+- Реализация современного дизайна.
+
+**[Макет Figma](https://www.figma.com/design/XU7bbOeldKwnTb6aIhVyyS/HTML-test-prj1)**
