@@ -25,7 +25,7 @@ export default function MainNavigation() {
           ></button>
         </div>
       </section>
-      {isOpenMenu && <MobileMenu isOpen={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />}
+      {isOpenMenu && <MobileMenu isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />}
     </>
   );
 }
