@@ -15,7 +15,7 @@ export default function Filters({ setFilter }) {
         <li>
           <button
             onClick={() => handleFilterChange('all')}
-            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
+            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 text-center max-sm:px-3 max-sm:py-1 ${
               activeFilter === 'all' ? 'bg-green text-white' : 'text-green'
             }`}
           >
@@ -25,7 +25,7 @@ export default function Filters({ setFilter }) {
         <li>
           <button
             onClick={() => handleFilterChange('news')}
-            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
+            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 text-center max-sm:px-3 max-sm:py-1 ${
               activeFilter === 'news' ? 'bg-green text-white' : 'text-green'
             }`}
           >
@@ -35,7 +35,7 @@ export default function Filters({ setFilter }) {
         <li>
           <button
             onClick={() => handleFilterChange('article')}
-            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
+            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 text-center max-sm:px-3 max-sm:py-1 ${
               activeFilter === 'article' ? 'bg-green text-white' : 'text-green'
             }`}
           >
