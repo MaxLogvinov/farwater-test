@@ -1,46 +1,51 @@
-import { NavLink } from 'react-router';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-export default function Filters() {
+export default function Filters({ setFilter }) {
+  const [activeFilter, setActiveFilter] = useState('all');
+
+  const handleFilterChange = filter => {
+    setActiveFilter(filter);
+    setFilter(filter);
+  };
+
   return (
     <nav>
       <ul className="flex gap-4 max-sm:gap-1">
         <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
-                isActive ? 'bg-green text-white' : 'text-green'
-              }`
-            }
+          <button
+            onClick={() => handleFilterChange('all')}
+            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
+              activeFilter === 'all' ? 'bg-green text-white' : 'text-green'
+            }`}
           >
             Все новости и статьи
-          </NavLink>
+          </button>
         </li>
         <li>
-          <NavLink
-            to="/news"
-            className={({ isActive }) =>
-              `text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
-                isActive ? 'bg-green text-white' : 'text-green'
-              }`
-            }
+          <button
+            onClick={() => handleFilterChange('news')}
+            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
+              activeFilter === 'news' ? 'bg-green text-white' : 'text-green'
+            }`}
           >
             Новости
-          </NavLink>
+          </button>
         </li>
         <li>
-          <NavLink
-            to="/articles"
-            className={({ isActive }) =>
-              `text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
-                isActive ? 'bg-green text-white' : 'text-green'
-              }`
-            }
+          <button
+            onClick={() => handleFilterChange('article')}
+            className={`text-sm max-sm:text-xs leading-4 border border-green rounded-[20px] px-3.5 py-1.5 max-sm:px-3 max-sm:py-1 ${
+              activeFilter === 'article' ? 'bg-green text-white' : 'text-green'
+            }`}
           >
             Статьи
-          </NavLink>
+          </button>
         </li>
       </ul>
     </nav>
   );
 }
+Filters.propTypes = {
+  setFilter: PropTypes.func
+};
