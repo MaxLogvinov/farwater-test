@@ -1,8 +1,22 @@
 import { Link } from 'react-router';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function DropdownMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleOutsideClick = event => {
+    if (!dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -10,7 +24,7 @@ export default function DropdownMenu() {
 
   return (
     <>
-      <div className="relative inline-block text-left max-xl:hidden">
+      <div className="relative inline-block text-left max-xl:hidden" ref={dropdownRef}>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="inline-flex w-full justify-between rounded-lg bg-black text-white font-bold text-lg leading-5 pr-[1.3rem]  cursor-pointer  bg-dropdown-icon bg-no-repeat bg-right"
